@@ -161,6 +161,9 @@ label #cancel{
     #check:checked ~ ul{
         left: 0;
     }
+    #check:checked ~ label .search{
+        display: none;
+    }
     #check:checked ~ label #btn1{
         display: none;
     }
@@ -253,6 +256,8 @@ label #cancel{
     .full-height{
         height: auto;
     }
+
+
 }
 
 /*  ==-CARDS-==   */
@@ -339,4 +344,23 @@ footer .container{
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+@media(max-width: 850px){
+    .title{
+        font-size: 2rem;
+    }
+   
+}
+@media(max-width: 380px){
+    .title{
+        font-size: 1.6rem;
+    }
+   
+}
+@media(max-width: 300px){
+    .title{
+        font-size: 1rem;
+    }
+   
 }
